@@ -44,7 +44,7 @@
 	 \centering
 	  \begin{tabular}{| p{5cm} | p{5cm} | p{5cm} |}
 	  \hline
-	    \textbf{\textit{Symmetric Encryption}}  & \textbf{\textit{Description}}  & \textbf{\textit{Size}} \\ \hline
+	    \textbf{\textit{AES}}  & \textbf{\textit{Description}}  & \textbf{\textit{Size}} \\ \hline
 	    \textbf{\textit{Key}}  & Generated using a PBKDF2 (Password-Based Key Derivation Function 2) with 10000 iterations and a random salt. & 32 bytes or 256 bits length. \\ \hline
 	    \textbf{\textit{IV}}  & Generated using a PBKDF2 also with the same iterations and a random salt. & 16 bytes or 128 bits length. \\ \hline
 	    \textbf{\textit{Mode}}  & CBC (Cipher Block Chaining) which ensures the transmission of the randomness of the IV from the first block cipher to the rest of them. & each block has the same size of the key (256 bits). \\ \hline
@@ -55,7 +55,7 @@
 		      \end{itemize} 
 		      & From 1 to 8 bytes \\
 		      \hline
-	    \textbf{\textit{Asymmetric Encryption}} & \textbf{\textit{Description}} & \textbf{\textit{Size}} \\ \hline
+	    \textbf{\textit{RSA}} & \textbf{\textit{Description}} & \textbf{\textit{Size}} \\ \hline
 	    \textbf{\textit{Private key}} & Stored securely on its owner device and knwon only by him/her and used for decryption. & 2048 bits. \\ \hline
 	    \textbf{\textit{Public key}} & Distributed to all the other parties and used for encryption. & 2048 bits. \\ \hline
 	    \textbf{\textit{Ciphertext}} & Computed only on the AES key, MAC key. & Depends on the \textit{Modulus} size (always equal to its size). \\ \hline

@@ -15,11 +15,13 @@
 %\usepackage{hyperref}
 \usepackage{pslatex} % for times new roman, old package, but works
 \usepackage{array} % for making text bold in table
-
-
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+\usepackage{amsmath}
 %For inserting Python Code
 \usepackage{listings}
 \usepackage{color}
+\usepackage{xcolor}
  
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -110,19 +112,19 @@
 \listoffigures % adds List of Figures
 \newpage
 
+\listoftables
+\newpage
+
 %And reset back the settings we choose for Header and Footer
  %reset numbering to normal for the main content
 
 \input{abstract.tex}
 \input{introduction.tex}
 \input{related_work}
-\input{threat_model}
-\input{architecture}
-\input{cryptography}
-\input{implementations}
-\input{discussion}
-\input{conclusion}
-\input{bibliography}
+\input{threat_model.tex}
+\input{cryptography.tex}
+\input{architecture.tex}
+\input{implementations.tex}
 
 
 

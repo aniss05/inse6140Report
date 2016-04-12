@@ -2,7 +2,7 @@
     \paragraph{}
       As an architecture of our implementation, we used a semi-decentralized scheme where in each session, there are three major participating parties (figure 1).
  
-      \begin{figure}[H]
+      \begin{figure}[h]
       
 	\centering
 	\includegraphics[width=16cm]{architecture}
@@ -19,7 +19,7 @@
 	  When two clients want to register on the application, say Alice and Bob, they will both generate an RSA key pair. Their respective public keys are going then to be sent to the server to be stored on the database (figure 2).
 	  
 
-	  \begin{figure}[H]
+	  \begin{figure}[h]
 	  
 	    \centering
 	    \includegraphics[width=8cm]{registrationsequence}
@@ -35,7 +35,7 @@
 	  
 	    If let's say Alice wants to send a message to Bob, she will first have to find his corresponding public key. To achieve that, she will send a request to the server which will query the database to check if Alice and Bob are both registered first, if that is the case, the server will then send Bob's public key to Alice (figure 3).
 	    
-	    \begin{figure}[H]
+	    \begin{figure}[h]
 	    
 	      \centering
 	      \includegraphics[width=8cm]{requestingcorrespondant'sRSApublickey}
@@ -56,13 +56,13 @@
 	     \item Choose a picture to send.
 	     \item Generate a session key (AES) and a MAC key.
 	     \item Generate a random IV.
-	     \item Encrypt the AES key, the MAC key, and her username using Bob's public key (message 1).
+	     \item  $\underbrace$({Encrypt the AES key, the MAC key, and her username using Bob's public key})_$\textrm{\textit{\textbf${message 1}}}.
 	     \item Encrypt the picture that she picked with the AES key and the IV (message 2).
 	     \item Generate a MAC tag using the MAC key on the second message (message 2) and the IV (message 3).
 	     \item Send the three messages to the server concatenated (message 1 + message 2 + message 3).
 	    \end{itemize}
 	    
-	    \begin{figure}[H]
+	    \begin{figure}[h]
 	    
 	      \centering
 	      \includegraphics[width=8cm]{picture_sending}
@@ -82,7 +82,7 @@
 	    
 	    
 	    
-	    \begin{figure}[H]
+	    \begin{figure}[h]
 	    
 	      \centering
 	      \includegraphics[width=8cm]{receive}
