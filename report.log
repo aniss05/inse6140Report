@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.4.5)  11 APR 2016 20:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.4.5)  13 APR 2016 09:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,6 +685,35 @@ File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count145
+)
+\etb@tempcnta=\count146
+)
+\csq@reset=\count147
+\csq@gtype=\count148
+\csq@glevel=\count149
+\csq@qlevel=\count150
+\csq@maxlvl=\count151
+\csq@tshold=\count152
+\csq@ltx@everypar=\toks38
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -701,34 +730,36 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 72.
+less on input line 73.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 74.
+less on input line 75.
 
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 84.
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 84
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 85.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 85
 .
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -766,17 +797,17 @@ LaTeX Font Info:    ... okay on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count145
+\scratchcounter=\count153
 \scratchdimen=\dimen180
 \scratchbox=\box65
-\nofMPsegments=\count146
-\nofMParguments=\count147
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count148
+\nofMPsegments=\count154
+\nofMParguments=\count155
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count156
 \MPscratchDim=\dimen181
-\MPnumerator=\count149
-\makeMPintoPDFobject=\count150
-\everyMPtoPDFconversion=\toks39
+\MPnumerator=\count157
+\makeMPintoPDFobject=\count158
+\everyMPtoPDFconversion=\toks40
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -793,7 +824,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 85.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -801,18 +832,18 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count151
+\c@section@level=\count159
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
 
 (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
  ABD: EveryShipout initializing macros
-\c@lstlisting=\count152
+\c@lstlisting=\count160
 
 (./cover.tex <concordia.jpg, id=87, 3011.25pt x 752.8125pt>
 File: concordia.jpg Graphic file (type jpg)
@@ -848,7 +879,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./concordia.jpg>])
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 107.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 108.
  (./report.toc)
 \tf@toc=\write5
 \openout5 = `report.toc'.
@@ -864,7 +895,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \newpage
+l.109 \newpage
                [1] (./report.lof)
 \tf@lof=\write6
 \openout6 = `report.lof'.
@@ -887,13 +918,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] (./abstract.tex) (./introduction.tex) (./related_work.tex)
+[3] (./abstract.tex) (./introduction.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 11.
+) (./related_work.tex)
 (./threat_model.tex) (./cryptography.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 16.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -901,13 +930,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 16.
+
 Overfull \hbox (4.22531pt too wide) in paragraph at lines 20--21
 []\OT1/ptm/m/n/12 AES uses substitution-permutation which are much more faster 
 op-er-a-tions than $[]$
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 37.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -915,6 +947,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 48--48
 \OT1/ptm/m/n/12 (Password-Based Key
  []
@@ -945,20 +984,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+[7pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.72 	\newpage
               ]) (./architecture.tex
-<architecture.png, id=172, 764.8575pt x 529.98pt>
+<architecture.png, id=183, 764.8575pt x 529.98pt>
 File: architecture.png Graphic file (type png)
  <use architecture.png>
 Package pdftex.def Info: architecture.png used on input line 8.
 (pdftex.def)             Requested size: 455.24408pt x 315.44308pt.
 
-<registrationsequence.png, id=173, 412.54124pt x 386.44376pt>
+<registrationsequence.png, id=184, 412.54124pt x 386.44376pt>
 File: registrationsequence.png Graphic file (type png)
 
 <use registrationsequence.png>
@@ -971,14 +1010,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.31 
       <./architecture.png>]
-<requestingcorrespondant'sRSApublickey.png, id=181, 273.02pt x 397.485pt>
+<requestingcorrespondant'sRSApublickey.png, id=192, 273.02pt x 397.485pt>
 File: requestingcorrespondant'sRSApublickey.png Graphic file (type png)
 
 <use requestingcorrespondant'sRSApublickey.png>
@@ -992,7 +1031,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1007,13 +1046,13 @@ d
 l.56 	     \item C
                   hoose a picture to send. <./registrationsequence.png> <./requ
 estingcorrespondant'sRSApublickey.png>]
-<picture_sending.png, id=189, 393.47pt x 622.325pt>
+<picture_sending.png, id=200, 393.47pt x 622.325pt>
 File: picture_sending.png Graphic file (type png)
  <use picture_sending.png>
 Package pdftex.def Info: picture_sending.png used on input line 68.
 (pdftex.def)             Requested size: 227.62204pt x 360.00865pt.
 
-<receive.png, id=190, 324.21124pt x 404.51125pt>
+<receive.png, id=201, 324.21124pt x 404.51125pt>
 File: receive.png Graphic file (type png)
  <use receive.png>
 Package pdftex.def Info: receive.png used on input line 88.
@@ -1025,8 +1064,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
-has been already used, duplicate ignored
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1038,40 +1077,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.131 \end{document}
+l.132 \end{document}
                      <./receive.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 50C296A6100A307FBB2CFDAA13BBD5DE;1289.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
+(rerunfilecheck)             Checksum: 58C51685A2AF9C00CDF478FF6E7F5B68;1299.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 18940 strings out of 493105
- 354545 string characters out of 6137073
- 459564 words of memory out of 5000000
- 21967 multiletter control sequences out of 15000+600000
+ 19819 strings out of 493105
+ 367065 string characters out of 6137073
+ 485019 words of memory out of 5000000
+ 22822 multiletter control sequences out of 15000+600000
  36309 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,66p,593b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,66p,911b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (11 pages, 524302 bytes).
+Output written on report.pdf (12 pages, 528537 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
  203 words of extra memory for PDF output out of 10000 (max. 10000000)
 
