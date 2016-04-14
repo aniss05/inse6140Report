@@ -1,7 +1,16 @@
 \section{Cryptography}
-  \subsection{Client-Server Communication}
+  \subsection{Client-Server Communications}
+	\paragraph{}
+		For such mobile application, we need to be sure that the data exchanged between the server and the client cannnot be tampered with.
+	\paragraph{}
+		In order to secure the communications between the client and the server, we used TLS 1.2 with a strong preferred cipher suite. In our case, we chooses ECDHE for key exchange mechanism, RSA for the authentication, AES (128 bits) in GCM mode and SHA256 for the MAC.
+		With OpenSSL enabled, we guarantee confidentiality, integrity  and authentication between the client and the server.
+	\paragraph{}
+		Moreover, all the requests to the server are authenticated in order to prevent spam and denial-of-service (DOS) attacks.
   \subsection{Password Storage}
-  \subsection{Data Encryption (Aniss)}
+  	\paragraph{}
+		All password are hashed on the server-side with bcrypt\footnote{\url{http://bcrypt.sourceforge.net/}} using 10 rounds. It guarantees that all passwords on the database are protected.
+  \subsection{Data Encryption}
     \paragraph{}
       In this section, we are going to discuss some cryptographic primitives that we used in the developpement of our application in order to secure the data exchange between different participants and to provide confidentiality.
       
@@ -32,7 +41,7 @@
 	    The participant that wants to establish a session (let's say Alice) (send a picture) with the other will first generate the AES session key, then she will use Bob's public key to encrypt this AES key. In that way, only Bob can decrypt the message using his private key and thus the secure exchange of AES sessions keys is ensured. In this project, because RSA encryption is really consuming and takes much more time, we used the basic and minimal size for the size of the keypair which is 2048 bits (but it is still secure enough).
 
 	
-      \subsection{Data Integrity (Aniss)}
+      \subsection{Data Integrity}
       
 	As for data integrity, we used Message Authentication Codes (MAC). The process consists of generating a MAC key of 32 bytes long using the following algorithm: $\textbf{\textit{HmacSHA512}}$.
 	Then a MAC tag is computed on the AES ciphertext and the IV using this key.
