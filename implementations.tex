@@ -1,9 +1,31 @@
 \section{Implementations}
 	\paragraph{}
-	All of our implementations (server, Android client and iOS client) are available on GitHub (\url{https://github.com/quentinlesceller/Puzzlr}) under MIT License.
+	All of our implementations (Server, Android client and iOS client) are available on GitHub (\url{https://github.com/quentinlesceller/Puzzlr}) under MIT License.
 	\subsection{Server side}
  		\subsubsection{Requirements}
- 		\subsubsection{Fabric} 
+ 		 	\paragraph{}
+ 			For this implementations, we were looking for a decentralized and secure open source server. The server should have some kind of API in order to easily develop with. The idea of a blockchain based server was a natural choice as Bitcoin and others cryptocurrencies can provide a very reliable decentralized ledger.
+ 			\subsubsection{Fabric} 
+ 			\paragraph{}
+ 			First, let define what is the Fabric:
+ 			\begin{displayquote}The Fabric is ledger of digital events, called transactions, shared among different participants, each having a stake in the system. The ledger can only be updated by consensus of the participants, and, once recorded, information can never be altered. Each recorded event is cryptographically verifiable with proof of agreement from the participants.
+ 			\paragraph{}
+ 			Transactions are secured, private, and confidential. Each participant registers with proof of identity to the network membership services to gain access to the system. Transactions are issued with derived certificates unlinkable to the individual participant, offering a complete anonymity on the network. Transaction content is encrypted with sophisticated key derivation functions to ensure only intended participants may see the content, protecting the confidentiality of the business transactions.
+ 			\paragraph{}
+ 			The fabric is an implementation of blockchain technology, where Bitcoin could be a simple application built on the fabric. It is a modular architecture allowing components to be plug-and-play by implementing this protocol specification. It features powerful container technology to host any main stream language for smart contracts development. Leveraging familiar and proven technologies is the motto of the fabric architecture.
+ 			\end{displayquote}
+ 			\paragraph{}
+ 			Fabric was released in December 2015\footnote{See \url{https://github.com/openblockchain}, now moved at  \url{https://github.com/hyperledger/}} and is part of the Linux's Foundation Hyperledger Project\footnote{See \url{https://www.hyperledger.org/}} which is a ``collaborative effort created to advance blockchain technology by identifying and addressing important features for a cross-industry open standard for distributed ledgers that can transform the way business transactions are conducted globally.''
+ 			\paragraph{}
+			Fabric is written mostly in Go and a REST API is implemented. For our application to work, we used 3 tables (aka Chaincodes) : 
+ 			\begin{itemize}
+ 			\item User, store username and hashed password.
+ 			\item Key, store the public keys.
+ 			\item Data, store the data.
+ 			\end{itemize}
+ 			This tables are written in Go and available on the Github of the project. We will not review here the code but we can highlight that these chaincodes were developped with security in mind (e.g: the ldger will not reveal if it was the username or the password that was wrong in order to avoid user enumerations or even the use of bcrypt).
+ 			\paragraph{}
+ 			We released Fabric4J\footnote{Available at \url{https://github.com/quentinlesceller/Fabric4J}} the first Java API for Fabric. There is also a Swift equivalent embedded in the iOS app but we do not plan to release it at this time (as it is less complete and was just created for the purpose of being used in Puzzlr).
  	\subsection{Client side}
  		\subsubsection{Android}
   			\paragraph{}
