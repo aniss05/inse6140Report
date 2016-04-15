@@ -7,7 +7,7 @@
  			For this implementations, we were looking for a decentralized and secure open source server. The server should have some kind of API in order to easily develop with. The idea of a blockchain based server was a natural choice as Bitcoin and others cryptocurrencies can provide a very reliable decentralized ledger.
  			\subsubsection{Fabric} 
  			\paragraph{}
- 			First, let define what is the Fabric:
+ 			\textbf{What is Fabric ?}
  			\begin{displayquote}The Fabric is ledger of digital events, called transactions, shared among different participants, each having a stake in the system. The ledger can only be updated by consensus of the participants, and, once recorded, information can never be altered. Each recorded event is cryptographically verifiable with proof of agreement from the participants.
  			\paragraph{}
  			Transactions are secured, private, and confidential. Each participant registers with proof of identity to the network membership services to gain access to the system. Transactions are issued with derived certificates unlinkable to the individual participant, offering a complete anonymity on the network. Transaction content is encrypted with sophisticated key derivation functions to ensure only intended participants may see the content, protecting the confidentiality of the business transactions.
@@ -17,7 +17,21 @@
  			\paragraph{}
  			Fabric was released in December 2015\footnote{See \url{https://github.com/openblockchain}, now moved at  \url{https://github.com/hyperledger/}} and is part of the Linux's Foundation Hyperledger Project\footnote{See \url{https://www.hyperledger.org/}} which is a ``collaborative effort created to advance blockchain technology by identifying and addressing important features for a cross-industry open standard for distributed ledgers that can transform the way business transactions are conducted globally.''
  			\paragraph{}
-			Fabric is written mostly in Go and a REST API is implemented. For our application to work, we used 3 tables (aka Chaincodes) : 
+			Fabric is written mostly in Go and a REST API is implemented.
+			
+			 \begin{figure}[H]
+	    		 \centering
+	     		 \includegraphics[width=14cm]{images/Fabric/Fabric}
+	     		 \caption{Fabric Overview}
+	   		\end{figure}
+			
+			 \textbf{Why use Fabric ?}
+			 \paragraph{}
+			 Building our server over the Fabric allowed us to build an unstoppable application.\\An App that run exactly as programmed without any possibility of downtime, censorship, fraud or third party interference.\\
+			 
+			  \textbf{How we worked with Fabric}
+			   \paragraph{}
+			 For our application to work, we used 3 tables (aka Chaincodes) : 
  			\begin{itemize}
  			\item User, store username and hashed password.
  			\item Key, store the public keys.
