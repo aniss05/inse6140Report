@@ -16,11 +16,11 @@
       
       \subsubsection{Image Encryption}
 	\paragraph{}
-	For images encryption, we have chosen the famous and well-known block cipher cryptosystem: Advanced Encryption Standard (AES). As a reminder of how AES works, it takes as input an AES key (128, 192, 256 bits length) and an Initialization Vector(IV) of 16 bytes (128 bits) length and a plaintext of any size.
+	For images encryption, we have chosen a secure block cipher cryptosystem, Advanced Encryption Standard (AES). As a reminder of how AES works, it takes as input an AES key (128, 192, 256 bits length) and an Initialization Vector(IV) of 16 bytes (128 bits) length and a plaintext of any size.
 	\paragraph{}
 	The algorithm starts first by dividing the plaintext into multiple blocks (each one has the same size as the key), this leads in general to the issue where the size of the plaintext is not a multiple of the size of the key. This is why we are obliged to pad the plaintext to make it multiple of the key size when the problem occurs.
 	\paragraph{}
-	But the question that someone might ask is: why did we choose to work with AES, why not with another algorithm like 3DES (Triple Data Encryption Standard) ? Well, the answer can be given as follows:
+	Why did we choose to work with AES, why not with another algorithm like 3DES (Triple Data Encryption Standard) ? Well, the answer can be given as follows:
 	\begin{itemize}
 	 \item AES is more secure and is less vulnerable to cryptanalysis unlike 3DES.
 	 \item AES supports larger key sizes than 3DES and thus larger block sizes. And this makes AES less vulnerable to attacks like $\textit{Birthday Paradox problem}$ than 3DES.
@@ -32,9 +32,9 @@
 	
 	\subsubsection{Key Encryption}
 	\paragraph{}
-	  Obviously, if Alice and Bob need to exchange an encrypted picture, they need first to securely exchange the session AES key. This is achieved by using the public key encryption (asymmetric encryption).
+	  If Alice and Bob need to exchange an encrypted picture, they need first to securely exchange the session AES key. This is achieved by using the public key encryption (asymmetric encryption).
 	  \paragraph{}
-	    In this work, we used the well-known public cryptosystem: Rivest Shamir Adleman (RSA). When Alice and Bob register, they generate an RSA keypair, private key and public key. As their name infer, the public key is distributed to all the participants while the private key must be stored in a very secure manner and only its owner ought to know it.
+	    In this work, we used the cryptosystem Rivest Shamir Adleman (RSA). When Alice and Bob register, they generate an RSA keypair, private key and public key. As their name infer, the public key is distributed to all the participants while the private key must be stored in a very secure manner and only its owner ought to know it.
 	  \paragraph{}
 	    In public key encryption schemes, the public key of your correspondant is used to encrypt the data. And when your correspondant receives this encrypted data, he will be the only one able to reverse the process with his/her private key.
 	  \paragraph{}
@@ -43,7 +43,7 @@
 	
       \subsection{Data Integrity}
       
-	As for data integrity, we used Message Authentication Codes (MAC). The process consists of generating a MAC key of 32 bytes long using the following algorithm: $\textbf{\textit{HmacSHA512}}$.
+	As for data integrity, we used Message Authentication Codes (MAC). The process consists of generating a MAC key of 32 bytes long using the following algorithm: $\textbf{\textit{HMACSHA512}}$.
 	Then a MAC tag is computed on the AES ciphertext and the IV using this key.
 	
 	\paragraph{}
