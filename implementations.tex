@@ -50,3 +50,29 @@
 			\color{blue}\underline{https://github.com/aniss05/Puzzlr2}\color{black} 
 	  	
 	\subsubsection{IOS}
+	\paragraph{}
+	We also wrote an iOS version of Puzzlr. This version was written in Swift and was challenging because Swift is a relatively new language and we had to use a lot of differents frameworks and modify them in order to have a working application.
+	We used 6 frameworks and forked 4 of them.
+
+	\begin{figure}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+  	\hline
+  	Name  & Author & License & Forked & Usage \\
+  	\hline
+  	AsymmetricCryptoManager & Ignacio Nieto Carvajal & MIT & Y &  RSA Keys Generation\\
+  	CryptoSwift & Marcin Krzyżanowski & MIT & N & AES and MAC \\
+  	CryptoImportExportManager &  Ignacio Nieto Carvajal & MIT & Y & Key management \\
+  	RSAUtils & Thanh Nguyen & MIT & Y & RSA Encryption \\
+  	SwiftyRSA & Loïs Di Qual & MIT & Y & Key management \\
+  	SWRevealViewController & Joan Lluch & MIT & N & Side Menu \\
+	\hline
+	\end{tabular}
+	\caption{List of frameworks used and forked in Puzzlr iOS}
+	\end{figure}
+	 		\begin{figure}[H]
+	    		 \centering
+	     		 \includegraphics[width=5cm]{images/iOS/login}
+	     		 \caption{Login page of Puzzlr iOS}
+	   		\end{figure}
+	   		When opening the app for the first time, the user is prompted to register. Once he is registered, a keypair is generated and stored securely in the iOS keychain. He can now add contact in the contact menu by writing his friend's username. If the previous friend is registered the app will retrieve his public key and store it in the iOS keychain. The user only have to create a new message, entering his friend's username and adding a photo. His friend will receive the picture instantenously on his iDevice.
